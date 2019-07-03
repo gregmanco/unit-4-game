@@ -1,0 +1,27 @@
+
+
+#Food-Items-Container {
+    justify-content: :center;
+    display:flex;
+    align-items:center;
+}
+
+.poop {
+    display:block
+    border: 1px;
+    padding: 5px;
+    border-color:black;
+    height: 150px;
+    border: solid;
+    width: 150px;
+    float:left;
+    margin: 5px;
+}
+
+#totalFood {
+    clear: both;
+    position: fixed;
+    right: 5px;
+    bottom: 150px;
+    
+}

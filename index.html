@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food Eater</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
 </head>
 
 
-<header>
-
-        <h1> Deliver the Foods!</h1>
-
-</header>
 
 <body>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+
+
+        <header>
+
+                <h1> Deliver the Foods!</h1>
+        
+        </header>
+        
+
+
+
     <p> Theres hungry people and they need to be fed. They are quite picky with exact amounts.
         You will be given a number at the start of the game. Each food item holds a value. Equal that
         value or lose your only client. Good luck!
@@ -24,14 +36,45 @@
 
 
 
+    <h2> Required Food Order:<span id="poop1">?</span></h2>
+
+    <p> Wins: <span id="wins">0</span></p>
+    <p> Losses: <span id="loses">0</span></p>
 
 
-    <script type="text/javascript" src="assets/javascript/game.js"
+        <div class="food"> 
+        <div id="appleBox" class="poop"></div>
+    
+        <p id="bananaBoX "class="poop"></p>
+        <p id="steakBox" class="poop"></p>
+        <p id="cakeBox" class="poop"></p>
+    </div>    
+
+
+    <h2> Total Food Orders</h2>
+    <br><br>
+    <h2> <span id="totalFood"></span></h2>
+
+
+
+    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+    
+  
 </body>
+
+
 </html>
 
 
 
 
+
+ <!--  <div id="apple" class="poop"></div>
+        <div id="steak "class="poop"></div>
+        <div id="cake" class="poop"></div>
+        <div id="banana" class="poop"></div> -->
 
 
