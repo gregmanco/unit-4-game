@@ -7,9 +7,9 @@
 // Game Variables 
 
 
-var loss = '';
+var loss = 0;
 
-var win = '';
+var win = 0;
 // User's Total Input 
 var userFoodTotal = 0;
 console.log(foodRequired);
@@ -28,64 +28,51 @@ console.log(steak);
 var cake =  Math.floor(Math.random()*11) +1;
 console.log(cake);
 
+
+function reset() {
+    var cake =  Math.floor(Math.random()*11) +1;
+    var steak = Math.floor(Math.random()*11) +1;
+    var banana = Math.floor(Math.random()*11) +1;
+    var apple = Math.floor(Math.random()*11) +1;
+    var foodRequired = Math.floor(Math.random() * 101) +19;
+    $('#poop1').text(foodRequired); 
+    var userFoodTotal = 0;
+    $('#totalFood').text(userFoodTotal);
+    }
+
  
- //    $("#appleBox").append(apple);
+ // Increases users total by the random value assigned to apple
 
     $("#appleBox").on('click',function() {
        userFoodTotal = apple+userFoodTotal;
        $('#totalFood').text(userFoodTotal); 
+       console.log(userFoodTotal)
      });
-
-
-
-// 4 Foods each with a random number that will reset on win or loss condition
-//$("#appleBox").on(click(function(){
-   //userFoodTotal = (userFoodTotal + apple);
-//})
-
-
-/*
-for(var i = 0; i < 4; i++) {
-    var randomNumber = Math.floor(Math.random()*11) +1;
-    console.log(randomNumber)
-
-    var food = $("p");
-    food.attr(randomNumber);
-
-    $(".poop").append(food);
-
-   // $(".poop").on("click", function() {
-        
-
-//}
-}
-   // $(".poop").text("hello");
-  //   $(".poop").click("totalFood");
-
-*/
-
-   
-
-// Reset
- /*function Reset () { 
-     var foodRequired;
-     var randomFoodValue;
-     var totalFood = 0;
- }
-*/
-
-
-
-//
-// Wins
-
-// Losses
+// Increases users total by the random value assigned to banana
+     $("#bananaBox").on('click',function() {
+        userFoodTotal = banana+userFoodTotal;
+        $('#totalFood').text(userFoodTotal); 
+        console.log(userFoodTotal)
+      });
+// Increases users total by the random value assigned to steak
+      $("#steakBox").on('click',function() {
+        userFoodTotal = steak+userFoodTotal;
+        $('#totalFood').text(userFoodTotal); 
+        console.log(userFoodTotal)
+      });
+// Increases users total by the random vlaue assigned to cake
+      $("#cakeBox").on('click',function() {
+        userFoodTotal = cake+userFoodTotal;
+        $('#totalFood').text(userFoodTotal); 
+        console.log(userFoodTotal)
+      });
 
 
 
 
-// When clicking a food item it should add its sum to the total score.
-
-// If total score = Computer Input then increase wins+ and reset
-
-// If total score > Computer Input than increase loss and reset
+     /* if ( userFoodTotal == foodRequired) {
+          win++;
+          $("#wins").text(win);
+          reset();
+      }
+      */
