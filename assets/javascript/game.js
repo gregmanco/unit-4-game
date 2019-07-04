@@ -14,7 +14,7 @@ var foods = {
   cake: { name: "cake", value: 0 },
   steak: { name: "steak", value: 0 },
   banana: { name: "banana", value: 0 },
-  apple: { name: "apple", value: 0 }
+  sushi: { name: "sushi", value: 0 }
 };
 
 
@@ -39,8 +39,8 @@ var getRandomValue = function (min, max) {
 function reset() {
   userFoodTotal = 0;
   foodRequired = getRandomValue(19, 120);
-  foods.apple.value = getRandomValue(1, 12);
-  console.log(foods.apple.value);
+  foods.sushi.value = getRandomValue(1, 12);
+  console.log(foods.sushi.value);
   foods.banana.value = getRandomValue(1, 12);
   console.log(foods.banana.value);
   foods.steak.value = getRandomValue(1, 12);
@@ -76,8 +76,8 @@ var addFoods = function(food) {
 reset();
 // Increases users total by the random value assigned to apple
 
-$("#appleBox").on('click', function () {
-  addFoods(foods.apple)
+$("#sushiBox").on('click', function () {
+  addFoods(foods.sushi)
 });
 // Increases users total by the random value assigned to banana
 $("#bananaBox").on('click', function () {
