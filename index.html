@@ -14,45 +14,73 @@
 
 
 <body>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+       
+    <div class="container">
+          <div class="row">
+                <div class="col-md-8">
+        <header class="img-fluid">
 
-
-        <header>
-
-                <h1> Deliver the Foods!</h1>
-        
+                <h1 class = "text-center display-2"> Deliver the Foods!</h1>
+                </div>
+           </div>     
         </header>
         
+   <!--  <div class="container"> -->
+         <div class="row">
+            <div class="col-md-8 gameInstructions">
+             <h5> There's hungry people and they need to be fed. They are quite picky with exact amounts.
+             You will be given an order number at the start of the game. Each food item holds a  random value. 
+            Equal the order number or lose your only client. Good luck!
+             <h5>
+                 <br>
+             <h4> Click on the types of food below to increase your total food score.</h4>
+             </div>
+        </div>
+    </div>
+    
+    <br>
 
+       
+     <div id="stonyville" class="container display-5">
+            <div class="row"> 
+                <div class="col-md-5">
+                    <h2> Required Food Order:<span id="poop1">?</span></h2>
+                </div>
+                <div class="col-md-4">
+                    <h3> Wins: <span id="wins">0</span></h3>
+                    <h3> Losses: <span id="loses">0</span></h3>
+                </div>
+             </div>   
+     </div>        
+  
 
+   
+     <div class="container lastBit">
+            <div class="row">
+                    <div class="col-md-10">
 
-    <p> There's hungry people and they need to be fed. They are quite picky with exact amounts.
-        You will be given an order number at the start of the game. Each food item holds a  random value. 
-        Equal the order number or lose your only client. Good luck!
-    </p>
-
-    <p> Click on the types of food below to increase your total food score.</p>
-
-
-
-    <h2> Required Food Order:<span id="poop1">?</span></h2>
-
-    <p> Wins: <span id="wins">0</span></p>
-    <p> Losses: <span id="loses">0</span></p>
-
-
-        <div class="food"> 
+        
         <div id="appleBox" class="poop"></div>
         <div id="bananaBox"class="poop"></div>
         <div id="steakBox" class="poop"></div>
         <div id="cakeBox" class="poop"></div>
-    </div>    
-
-
-    <h2> Total Food Orders</h2>
-    <br><br>
-    <h2> <span id="totalFood"></span></h2>
+                    </div>
+            </div>       
+     <br><br>
+            <div class="row">
+                    <div class="col-md-4">
+                        <h2> Total Food Orders</h2>
+                    </div>    
+            </div>      
+        </div>
+        <div class="container lastBit">
+                <div class="row">
+                        <div class="col-md-10">
+                      <h2> <span id="totalFood"></span></h2>
+                        </div>
+                </div>       
+        </div>         
+       
 
 
 

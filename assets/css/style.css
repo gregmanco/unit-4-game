@@ -1,10 +1,32 @@
-
-
-#Food-Items-Container {
-    justify-content: :center;
-    display:flex;
-    align-items:center;
+ header {
+     top: 30px;
+    height: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    color: black;
+    text-shadow: 2px;
+    background-color: white;
+    
 }
+
+body {
+    background-image: url("https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300280/54088843-healthy-food-background-studio-photo-of-different-fruits-on-white-wooden-table-high-resolution-produ.jpg");
+    max-width: 100%;
+    max-height: 100%;
+ 
+}
+
+.gameInstructions {
+    color: black;
+    background:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#stonyville { 
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 
 .poop {
     display:block
@@ -14,14 +36,13 @@
     height: 150px;
     border: solid;
     width: 150px;
-    float:left;
+    float: left;
     margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#totalFood {
-    clear: both;
-    position: fixed;
-    right: 5px;
-    bottom: 150px;
-    
+.lastBit {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
